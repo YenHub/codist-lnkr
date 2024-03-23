@@ -6,6 +6,7 @@ import { Inter } from 'next/font/google';
 import { ApplicationNameMeta } from '@/components/Layout/Header/ApplicationNameMeta';
 import { AuthorMeta } from '@/components/Layout/Header/AuthorMeta';
 import { CopyRightMeta } from '@/components/Layout/Header/CopyRightMeta';
+import { Favicon } from '@/components/Layout/Header/Favicon';
 import { LanguageMeta } from '@/components/Layout/Header/LanguageMeta';
 import { RobotsMeta } from '@/components/Layout/Header/RobotsMeta';
 import { metaKeywords } from '@/constants/meta.keywords';
@@ -31,6 +32,7 @@ export default function RootLayout({
         <CopyRightMeta />
         <ApplicationNameMeta />
         <LanguageMeta />
+        <Favicon />
       </head>
       <body className={inter.className}>{children}</body>
     </html>

@@ -3,13 +3,16 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
-import { ApplicationNameMeta } from '@/components/Layout/Header/ApplicationNameMeta';
-import { AuthorMeta } from '@/components/Layout/Header/AuthorMeta';
-import { CopyRightMeta } from '@/components/Layout/Header/CopyRightMeta';
-import { Favicon } from '@/components/Layout/Header/Favicon';
-import { LanguageMeta } from '@/components/Layout/Header/LanguageMeta';
-import { RobotsMeta } from '@/components/Layout/Header/RobotsMeta';
-import { metaKeywords } from '@/constants/meta.keywords';
+import {
+  ApplicationNameMeta,
+  AuthorMeta,
+  CopyRightMeta,
+  Favicon,
+  LanguageMeta,
+  RobotsMeta,
+} from '@/components/Layout/Header';
+
+import { metaKeywords } from '../constants/meta.keywords';
 
 const inter = Inter({ subsets: ['latin'] });
 

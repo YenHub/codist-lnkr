@@ -6,7 +6,7 @@ import {
   getInitColorSchemeScript,
 } from '@mui/material';
 
-import theme from '@/theme';
+import theme from '@/lib/theme';
 
 export const MuiThemeProvider: React.FC<{ children: React.ReactNode }> = ({
   children,

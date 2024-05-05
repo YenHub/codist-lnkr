@@ -3,7 +3,7 @@
 import type {} from '@mui/material/themeCssVarsAugmentation';
 import { Roboto } from 'next/font/google';
 
-import { experimental_extendTheme as extendTheme } from './lib/mui';
+import { experimental_extendTheme as extendTheme } from './mui/mui';
 
 const roboto = Roboto({
   weight: ['300', '400', '500', '700'],

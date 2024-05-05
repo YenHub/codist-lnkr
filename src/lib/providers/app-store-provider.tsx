@@ -7,7 +7,7 @@ import {
   type AppStore,
   createAppStore,
   initAppStore,
-} from '@/stores/app-store';
+} from '@/lib/store/app-store';
 
 export const AppStoreContext = createContext<StoreApi<AppStore> | null>(null);
 

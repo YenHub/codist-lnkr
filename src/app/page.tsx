@@ -1,5 +1,5 @@
-import { AppLogo } from '@/components/AppLogo';
-import { LinkForm } from '@/components/LinkForm';
+import { AppLogo } from '@/lib/components/AppLogo';
+import { LinkForm } from '@/lib/components/LinkForm';
 
 import styles from './styles.module.css';
 

@@ -8,11 +8,11 @@ import {
   CopyRightMeta,
   Favicon,
   LanguageMeta,
-} from '@/components/Layout/Header';
-import { AppStoreProvider } from '@/providers/app-store-provider';
-import { MuiThemeProvider } from '@/providers/mui-theme-provider';
+} from '@/lib/components/Layout/Header';
+import { AppStoreProvider } from '@/lib/providers/app-store-provider';
+import { MuiThemeProvider } from '@/lib/providers/mui-theme-provider';
 
-import { metaKeywords } from '../constants/meta.keywords';
+import { metaKeywords } from '../lib/constants/meta.keywords';
 
 const inter = Inter({ subsets: ['latin'] });
 

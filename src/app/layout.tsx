@@ -5,12 +5,9 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 import {
-  ApplicationNameMeta,
-  AuthorMeta,
   CopyRightMeta,
   Favicon,
   LanguageMeta,
-  RobotsMeta,
 } from '@/components/Layout/Header';
 import { ThemeProvider } from '@/lib/mui';
 import { AppStoreProvider } from '@/providers/app-store-provider';
@@ -24,6 +21,9 @@ export const metadata: Metadata = {
   title: 'LNKR by Codist',
   description: 'LNKR | The free URL shortening service',
   keywords: metaKeywords,
+  robots: 'index,follow',
+  authors: { name: 'Codist | Ian Gilkes' },
+  applicationName: 'LNKR',
 };
 
 export default function RootLayout({
@@ -34,10 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <RobotsMeta />
-        <AuthorMeta />
         <CopyRightMeta />
-        <ApplicationNameMeta />
         <LanguageMeta />
         <Favicon />
       </head>

@@ -12,6 +12,18 @@
   "rules": {
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
+    "newline-before-return": "error",
+    "curly": [
+      "error",
+      "multi-line"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
     "padding-line-between-statements": [
       "error",
       {
@@ -54,10 +66,6 @@
     "semi": [
       "error",
       "always"
-    ],
-    "quotes": [
-      "error",
-      "single"
     ],
     "linebreak-style": [
       "error",

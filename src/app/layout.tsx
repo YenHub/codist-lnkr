@@ -13,6 +13,7 @@ import {
   RobotsMeta,
 } from '@/components/Layout/Header';
 import { ThemeProvider } from '@/lib/mui';
+import { AppStoreProvider } from '@/providers/app-store-provider';
 import theme from '@/theme';
 
 import { metaKeywords } from '../constants/meta.keywords';
@@ -42,7 +43,9 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>{children}</ThemeProvider>
+          <AppStoreProvider>
+            <ThemeProvider theme={theme}>{children}</ThemeProvider>
+          </AppStoreProvider>
         </AppRouterCacheProvider>
       </body>
     </html>

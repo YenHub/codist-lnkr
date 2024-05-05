@@ -9,9 +9,8 @@ import {
   Favicon,
   LanguageMeta,
 } from '@/components/Layout/Header';
-import { ThemeProvider } from '@/lib/mui';
 import { AppStoreProvider } from '@/providers/app-store-provider';
-import theme from '@/theme';
+import { MuiThemeProvider } from '@/providers/mui-theme-provider';
 
 import { metaKeywords } from '../constants/meta.keywords';
 
@@ -41,7 +40,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <AppRouterCacheProvider>
           <AppStoreProvider>
-            <ThemeProvider theme={theme}>{children}</ThemeProvider>
+            <MuiThemeProvider>{children}</MuiThemeProvider>
           </AppStoreProvider>
         </AppRouterCacheProvider>
       </body>

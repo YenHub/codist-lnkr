@@ -1,8 +1,10 @@
 'use client';
 
+import { teal } from '@mui/material/colors';
+import type {} from '@mui/material/themeCssVarsAugmentation';
 import { Roboto } from 'next/font/google';
 
-import { createTheme } from './lib/mui';
+import { experimental_extendTheme as extendTheme } from './lib/mui';
 
 const roboto = Roboto({
   weight: ['300', '400', '500', '700'],
@@ -10,12 +12,25 @@ const roboto = Roboto({
   display: 'swap',
 });
 
-const theme = createTheme({
+const theme = extendTheme({
+  colorSchemes: {
+    light: {
+      palette: {
+        primary: {
+          main: teal[600],
+        },
+      },
+    },
+    dark: {
+      palette: {
+        primary: {
+          main: teal[400],
+        },
+      },
+    },
+  },
   typography: {
     fontFamily: roboto.style.fontFamily,
-  },
-  palette: {
-    mode: 'dark',
   },
 });
 

@@ -1,5 +1,6 @@
 import './globals.css';
 
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
@@ -11,6 +12,8 @@ import {
   LanguageMeta,
   RobotsMeta,
 } from '@/components/Layout/Header';
+import { ThemeProvider } from '@/lib/mui';
+import theme from '@/theme';
 
 import { metaKeywords } from '../constants/meta.keywords';
 
@@ -37,7 +40,11 @@ export default function RootLayout({
         <LanguageMeta />
         <Favicon />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <AppRouterCacheProvider>
+          <ThemeProvider theme={theme}>{children}</ThemeProvider>
+        </AppRouterCacheProvider>
+      </body>
     </html>
   );
 }

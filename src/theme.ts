@@ -1,6 +1,5 @@
 'use client';
 
-import { teal } from '@mui/material/colors';
 import type {} from '@mui/material/themeCssVarsAugmentation';
 import { Roboto } from 'next/font/google';
 
@@ -16,16 +15,16 @@ const theme = extendTheme({
   colorSchemes: {
     light: {
       palette: {
-        primary: {
-          main: teal[600],
-        },
+        // primary: {
+        //   main: teal[600],
+        // },
       },
     },
     dark: {
       palette: {
-        primary: {
-          main: teal[400],
-        },
+        // primary: {
+        //   main: teal[400],
+        // },
       },
     },
   },
